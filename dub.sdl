@@ -1,0 +1,18 @@
+name "addin"
+targetType "dynamicLibrary"   # "library", "dynamicLibrary"
+
+
+# To choose a configuration, use dub --config=<name>. By default, the first configuration
+# that matches the target type and build platform is selected automatically.
+
+# any folder "source" or "src" is automatically used as a source path if no sourcePaths setting is
+# specified - define "importPaths" as well as "sourcePaths" as they are independent
+
+
+platforms "osx"         # "windows-x86_64" "osx" "posix"
+#dflags "-version=Fred"
+#lflags "-L$PYD_LIBPYTHON_DIR"
+
+
+importPaths "src/"
+sourcePaths "src/"
